@@ -1,0 +1,13 @@
+{
+    "name": "mts-backend",
+    "description": "backend for mytouchsmart",
+    "env": {
+          "MONGO_PASS": {
+            "value": "173adMD798"
+          },
+          "JWT_KEY": {
+            "value": "4/kRbaAxspc29favf1C1djAuPm+emq+Qh5Y5pb1UZFc="
+          }
+        }
+      
+}

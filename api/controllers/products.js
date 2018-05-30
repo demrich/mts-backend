@@ -21,7 +21,6 @@ exports.products_get_all = (req, res, next) => {
                         type: doc.type,
                         request: {
                             type: 'GET',
-                            url: 'http://localhost:3001/products/' + doc._id
                         }
                     }
                 })
@@ -66,7 +65,6 @@ exports.products_create_product = (req, res, next) => {
                 },
                 request: {
                     type: 'GET',
-                    url:'http://localhost:3001/products/' + result._id
                 }
             });
          })
@@ -87,7 +85,6 @@ exports.products_find_product = (req, res, next) => {
                    product: product,
                    request: {
                     type: 'GET',
-                    url:'http://localhost:3001/products/'
                    }
                })
            })
@@ -112,7 +109,6 @@ exports.products_edit_product = (req, res, next) => {
             message: 'Product Successfully Updated',
             request: {
                 type:'GET',
-                url:'http://localhost:3001/products/' + id
             }
         })
     })
@@ -132,7 +128,6 @@ exports.products_delete_product = (req, res, next) => {
             message: 'Product Deleted',
             request: {
                 type: 'POST',
-                url:'http://localhost:3001/products/'
             }
         });
     })

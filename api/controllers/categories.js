@@ -20,7 +20,6 @@ exports.categories_get_categories = (req, res, next) => {
                         learnLink: doc.learnLink,
                         request: {
                             type: 'GET',
-                            url: 'http://localhost:3001/categories/' + doc._id
                         }
                     }
                 })
@@ -61,7 +60,6 @@ exports.categories_post_category = (req, res, next) => {
                     learnLink: result.learnLink,
                     request: {
                         type: 'GET',
-                        url: 'http://localhost:3001/categories/' + result._id
                     }
                 }
             });
@@ -87,7 +85,6 @@ exports.categories_get_category = (req, res, next) => {
                 request: {
                     type:'GET',
                     description: 'My Categories',
-                    url:'http://localhost:3001/categories/'
                 }
             });
         } else {
@@ -115,7 +112,6 @@ exports.categories_edit_category = (req, res, next) => {
             message: 'Category Successfully Updated',
             request: {
                 type:'GET',
-                url:'http://localhost:3001/categories/' + id
             }
         })
     })

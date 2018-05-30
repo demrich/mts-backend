@@ -17,7 +17,6 @@ exports.heroes_get_heroes = (req, res, next) => {
                         button: doc.button,
                         request: {
                             type: 'GET',
-                            url: 'http://localhost:3001/heroes/' + doc._id
                         }
                     }
                 })
@@ -52,7 +51,6 @@ exports.heroes_post_hero = (req, res, next) => {
                     button: result.button,
                     request: {
                         type: 'GET',
-                        url: 'http://localhost:3001/heroes/' + result._id
                     }
                 }
             });
@@ -78,7 +76,6 @@ exports.heroes_get_hero = (req, res, next) => {
                 request: {
                     type:'GET',
                     description: 'My heroes',
-                    url:'http://localhost:3001/heroes/'
                 }
             });
         } else {
@@ -106,7 +103,6 @@ exports.heroes_edit_hero = (req, res, next) => {
             message: 'Hero Successfully Updated',
             request: {
                 type:'GET',
-                url:'http://localhost:3001/heroes/' + id
             }
         })
     })
